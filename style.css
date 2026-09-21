@@ -1,0 +1,92 @@
+:root {
+  --primary-pink: #f59197;
+  --soft-pink: #f8e5e1;
+  --white: #ffffff;
+  --dark: #333333;
+}
+
+.eloria-navbar {
+  background-color: var(--white);
+  border-bottom: 1px solid #f1d8d5;
+}
+
+.eloria-brand {
+  color: var(--primary-pink);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.eloria-brand:hover {
+  color: var(--primary-pink);
+}
+
+.eloria-nav .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.eloria-nav .nav-link:hover,
+.eloria-nav .nav-link.active {
+  color: var(--primary-pink);
+}
+
+.eloria-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 3px;
+  height: 2px;
+  background-color: var(--primary-pink);
+  border-radius: 10px;
+}
+
+.header-icons a {
+  color: var(--dark);
+  font-size: 1.2rem;
+  margin-left: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+  color: var(--primary-pink);
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--primary-pink);
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .eloria-nav {
+    padding: 15px 0;
+  }
+
+  .eloria-nav .nav-link {
+    margin: 5px 0;
+  }
+
+  .eloria-nav .nav-link.active::after {
+    display: none;
+  }
+
+  .header-icons {
+    padding-bottom: 10px;
+  }
+
+  .header-icons a {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+}

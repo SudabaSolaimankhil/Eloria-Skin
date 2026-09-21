@@ -14,7 +14,68 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg eloria-navbar">
+        <div class="container py-2">
+          <!-- Logo -->
+          <a class="eloria-brand" href="#"> Eloria Skin </a>
+
+          <!-- Mobile Toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#eloriaNavbar"
+            aria-controls="eloriaNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- Navigation -->
+          <div class="collapse navbar-collapse" id="eloriaNavbar">
+            <ul class="navbar-nav mx-auto eloria-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Icons -->
+            <div class="header-icons">
+              <a href="#" aria-label="Search">
+                <i class="bi bi-search"></i>
+              </a>
+
+              <a href="#" aria-label="Wishlist">
+                <i class="bi bi-heart"></i>
+              </a>
+
+              <a href="#" aria-label="Shopping bag">
+                <i class="bi bi-bag"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
