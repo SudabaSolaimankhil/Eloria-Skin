@@ -304,3 +304,21 @@
     font-size: 0.7rem;
   }
 }
+
+
+  .bg-custom-light {
+            background-color: #fdf0ed; /* پس‌زمینه صورتی بسیار ملایم بالا */
+        }
+        .bg-custom-dark {
+            background-color: #f38375; /* پس‌زمینه صورتی تیره پایین */
+        }
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            background-color: #ffffff;
+            height: 100%;
+        }
+        .icon-box {
+            color: #f38375;
+            font-size: 2rem;
+        }
