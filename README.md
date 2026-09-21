@@ -20,7 +20,7 @@ The main goal of this project is not only to build a website, but also to learn 
 
 Explore the live version of the **Eloria Skin** website:
 
-👉 **[View Live Demo](YOUR-LIVE-DEMO-URL)**
+👉 **[View Live Demo](https://sudabasolaimankhil.github.io/Eloria-Skin/)**
 
 > The live demo will be updated as the project develops.
 
