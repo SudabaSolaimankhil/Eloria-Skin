@@ -1,3 +1,4 @@
+
 :root {
   --primary-pink: #f59197;
   --soft-pink: #f8e5e1;
@@ -427,3 +428,28 @@
             color: #f38375;
             font-size: 2rem;
         }
+
+footer {
+  background-color: #f8e5e1;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f59197;
+}
+
+footer .fab {
+  font-size: 1.2rem;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+footer .fab:hover {
+  transform: scale(1.2);
+  color: #f59197;
+}
