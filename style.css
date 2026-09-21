@@ -1,0 +1,429 @@
+:root {
+  --primary-pink: #f59197;
+  --soft-pink: #f8e5e1;
+  --white: #ffffff;
+  --dark: #333333;
+}
+
+.eloria-navbar {
+  background-color: var(--white);
+  border-bottom: 1px solid #f1d8d5;
+}
+
+.eloria-brand {
+  color: var(--primary-pink);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.eloria-brand:hover {
+  color: var(--primary-pink);
+}
+
+.eloria-nav .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.eloria-nav .nav-link:hover,
+.eloria-nav .nav-link.active {
+  color: var(--primary-pink);
+}
+
+.eloria-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 3px;
+  height: 2px;
+  background-color: var(--primary-pink);
+  border-radius: 10px;
+}
+
+.header-icons a {
+  color: var(--dark);
+  font-size: 1.2rem;
+  margin-left: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+  color: var(--primary-pink);
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--primary-pink);
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .eloria-nav {
+    padding: 15px 0;
+  }
+
+  .eloria-nav .nav-link {
+    margin: 5px 0;
+  }
+
+  .eloria-nav .nav-link.active::after {
+    display: none;
+  }
+
+  .header-icons {
+    padding-bottom: 10px;
+  }
+
+  .header-icons a {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+}
+/* A New Standard of Beauty */
+
+.beauty-standard {
+    background-color: #ffffff;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.beauty-content {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.beauty-content h2 {
+    color: #171717;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.15;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.beauty-text {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.beauty-btn {
+    background-color: #f59197;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.beauty-btn:hover {
+    background-color: #e97d85;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.beauty-image {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.beauty-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+/* Tablet */
+@media (max-width: 991.98px) {
+
+    .beauty-standard {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .beauty-content {
+        text-align: center;
+        margin: auto;
+    }
+
+    .beauty-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .beauty-image {
+        height: 350px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 575.98px) {
+
+    .beauty-standard {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .beauty-content h2 {
+        font-size: 2rem;
+    }
+
+    .beauty-text {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .beauty-image {
+        height: 280px;
+    }
+
+    .beauty-btn {
+        padding: 12px 25px !important;
+    }
+}
+
+/* =========================
+   HERO SECTION
+
+:root {
+  --primary-pink: #f59197;
+  --soft-pink: #f8e5e1;
+  --white: #ffffff;
+  --dark: #333333;
+}
+
+.eloria-hero {
+  background-color: var(--soft-pink);
+  overflow: hidden;
+  padding: 70px 0;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+/* Subtitle */
+
+.hero-subtitle {
+  display: inline-block;
+  color: var(--primary-pink);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+
+.hero-title {
+  color: var(--dark);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.hero-title span {
+  color: var(--primary-pink);
+}
+
+/* Description */
+
+.hero-text {
+  max-width: 520px;
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-shop {
+  background-color: var(--primary-pink);
+  color: var(--white);
+  padding: 13px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid var(--primary-pink);
+  transition: 0.3s ease;
+}
+
+.btn-shop:hover {
+  background-color: #e77f86;
+  border-color: #e77f86;
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-explore {
+  color: var(--primary-pink);
+  background-color: transparent;
+  padding: 13px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid var(--primary-pink);
+  transition: 0.3s ease;
+}
+
+.btn-explore:hover {
+  background-color: var(--primary-pink);
+  color: var(--white);
+}
+
+/* =========================
+   HERO IMAGE
+
+.hero-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+/* Outer white circle */
+.hero-circle {
+  position: absolute;
+  width: 470px;
+  height: 470px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* Image */
+.hero-image {
+  position: relative;
+  z-index: 2;
+
+  width: 420px;
+  height: 420px;
+
+  object-fit: cover;
+  border-radius: 50%;
+
+  box-shadow: 0 15px 40px rgba(245, 145, 151, 0.15);
+}
+
+/* Floating Badge */
+
+.hero-badge {
+  position: absolute;
+  right: 5%;
+  bottom: 12%;
+  z-index: 3;
+
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+
+  background-color: var(--primary-pink);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-badge i {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+/* =========================
+   RESPONSIVE
+
+@media (max-width: 991px) {
+  .eloria-hero {
+    padding: 60px 0;
+  }
+
+  .hero-image-wrapper {
+    min-height: 450px;
+    margin-top: 30px;
+  }
+
+  .hero-circle {
+    width: 350px;
+    height: 350px;
+  }
+
+  .hero-image {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    min-height: 350px;
+  }
+
+  .hero-circle {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-badge {
+    width: 85px;
+    height: 85px;
+    right: 5%;
+    bottom: 5%;
+    font-size: 0.7rem;
+  }
+}
+
+
+  .bg-custom-light {
+            background-color: #fdf0ed; /* پس‌زمینه صورتی بسیار ملایم بالا */
+        }
+        .bg-custom-dark {
+            background-color: #f38375; /* پس‌زمینه صورتی تیره پایین */
+        }
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            background-color: #ffffff;
+            height: 100%;
+        }
+        .icon-box {
+            color: #f38375;
+            font-size: 2rem;
+        }
