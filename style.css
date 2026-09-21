@@ -200,7 +200,7 @@
     }
 }
 
-/* =========================
+/* ========================= */
    HERO SECTION
 
 :root {
@@ -295,8 +295,8 @@
   color: var(--white);
 }
 
-/* =========================
-   HERO IMAGE
+/* ========================= */
+
 
 .hero-image-wrapper {
   position: relative;
@@ -362,7 +362,7 @@
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE */
 
 @media (max-width: 991px) {
   .eloria-hero {
@@ -413,10 +413,10 @@
 
 
   .bg-custom-light {
-            background-color: #fdf0ed; /* پس‌زمینه صورتی بسیار ملایم بالا */
+            background-color: #fdf0ed; 
         }
         .bg-custom-dark {
-            background-color: #f38375; /* پس‌زمینه صورتی تیره پایین */
+            background-color: #f38375;
         }
         .card-custom {
             border: none;
