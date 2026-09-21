@@ -90,10 +90,117 @@
     margin-right: 18px;
   }
 }
+/* A New Standard of Beauty */
+
+.beauty-standard {
+    background-color: #ffffff;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.beauty-content {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.beauty-content h2 {
+    color: #171717;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.15;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.beauty-text {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.beauty-btn {
+    background-color: #f59197;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.beauty-btn:hover {
+    background-color: #e97d85;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.beauty-image {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.beauty-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+/* Tablet */
+@media (max-width: 991.98px) {
+
+    .beauty-standard {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .beauty-content {
+        text-align: center;
+        margin: auto;
+    }
+
+    .beauty-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .beauty-image {
+        height: 350px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 575.98px) {
+
+    .beauty-standard {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .beauty-content h2 {
+        font-size: 2rem;
+    }
+
+    .beauty-text {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .beauty-image {
+        height: 280px;
+    }
+
+    .beauty-btn {
+        padding: 12px 25px !important;
+    }
+}
 
 /* =========================
    HERO SECTION
-========================= */
 
 :root {
   --primary-pink: #f59197;
@@ -189,7 +296,6 @@
 
 /* =========================
    HERO IMAGE
-========================= */
 
 .hero-image-wrapper {
   position: relative;
@@ -256,7 +362,6 @@
 
 /* =========================
    RESPONSIVE
-========================= */
 
 @media (max-width: 991px) {
   .eloria-hero {
